@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+:root {
+    --base-font-size-small: 16px;
+    --base-font-size-normal: 18px;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#header {
+    padding: 25px 13%;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*margin-bottom: 30px;*/
+}
+
+#header-buttons {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#header-buttons .buttons {
+    margin-left: 0;
+    padding: 10px 30px;
+}
+
+.buttons div, .buttons a{
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: var(--base-font-size-small);
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#header-buttons a:hover {
+    color: #3B516E;
+    transition: color 0.5s;
+}
+
+#navigation {
+    position: fixed;
+    z-index: 1;
+    top: 45%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12%;
+}
+
+.navigation-btns {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid #C0DEEF;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.navigation-btns:first-child {
+    background-color: #C0DEEF;
+}
+
+#home-wrapper {
+    background: url('../images/background-image.png') no-repeat top right;
+    background-size: cover;
+    height: 90%;
+    padding: 10% 13% 0 13%;
+    display: flex;
+    flex-direction: row;
+}
+
+#info-wrapper {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 5%;
+}
+
+#title {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 2%;
+}
+
+#sub-title {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: var(--base-font-size-small);
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15%;
+}
+
+.button {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: var(--base-font-size-normal);
+    text-align: center;
+}
+
+.button:hover {
+    color: #F7C340;
+    border-color: #F7C340;
+    transition: color 0.5s, border-color 0.5s;
+    cursor: pointer;
+}
+
+a {text-decoration:none;}
+
+.download-button-light {
+    background: url('../images/android.png') no-repeat 6px;
+    background-size: contain;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    transition: border-color 0.5s;
+    border-radius: 40px;
+    padding: 10px 40px 10px 60px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.download-button-light:hover {
+    border-color: #F7C340;
+    transition: border-color 0.5s;
+    cursor: pointer;
+}
+
+.download-button-dark {
+    width: fit-content;
+    margin: 0 auto;
+    background: url('../images/android-dark.png') no-repeat 6px;
+    background-size: contain;
+    color: #3B516E;
+    border: 2px solid #3B516E;
+    transition: border-color 0.5s;
+    border-radius: 40px;
+    padding: 10px 40px 10px 60px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.download-button-dark:hover {
+    border-color: #F7C340;
+    transition: border-color 0.5s;
+    cursor: pointer;
+}
+
+.button-subtitle {
+    margin-top: 2%;
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: var(--base-font-size-small);
+    text-align: center;
+}
+
+#pros-wrapper {
+    padding: 5% 13%;
+    height: fit-content;
+}
+
+.pro {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro-image {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pro-image img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.pro-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pro-list {
+    width: 40%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: var(--base-font-size-normal);
+    color: #3B516E;
+    line-height: 28px;
+    margin: 8% 0;
+    padding: 0;
+}
+
+.pro-list li {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pro-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #3B516E;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #5F87AD;
+}
+
+.pro-subtitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--base-font-size-normal);
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #3B516E;
+}
+
+#download-wrapper {
+    margin-top: 10%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#download-title {
+    width: 30%;
+    margin: 5% auto;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    color: #3B516E;
+}
+
+#decoration-1 {
+    height: 50px;
+    position: absolute;
+    right: 27%;
+    bottom: 60%;
+}
+
+#decoration-2 {
+    height: 70px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+#feedback-wrapper {
+    background-color: #2C353E;
+    padding: 5% 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+#feedback-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#feedback-subtitle {
+    width: 45%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--base-font-size-normal);
+    color: white;
+    margin-bottom: 20px;
+}
+
+#social-networks {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.social-networks-item {
+    height: 25px;
+    width: 25px;
+}
+
+.input {
+    font-family: "Open Sans";
+    font-size: var(--base-font-size-normal);
+    text-align: left;
+    background-color: transparent;
+    border: solid 2px white;
+    padding: 10px 10px;
+    color: #FFFFFF;
+    margin-bottom: 2%;
+}
+
+.input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    text-align:left;
+    color: #777879;
+    opacity: 60%;
+}
+input:-moz-placeholder {
+    text-align:left;
+    color: #777879;
+    opacity: 60%;
+}
+
+#sender-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+#message-input {
+    height: 200px;
+    resize: none;
+    margin-bottom: 10%;
+}
+
+#send-btn {
+    width: 50%;
+    align-self: center;
+}
+
+#copyright {
+    margin-top: -30px;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}

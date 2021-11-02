@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Главная | Kristo Landing Page</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+          rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <a href=""><img src="../images/kristo-logo.png" style="height: 38px;  margin-left: 1px;" alt=""></a>
+    <div id="header-buttons">
+        <div class="buttons"><a href="">PRESALE</a></div>
+        <div class="buttons"><div onclick="jump('pros-wrapper')">О приложении</div></div>
+        <div class="buttons"><div onclick="jump('pro-list-3')">Скачать</div></div>
+        <div class="buttons"><div onclick="jump('feedback-wrapper')"> Контакты</div></div>
+    </div>
+</div>
+<div id="navigation">
+    <div class="navigation-btns" id="home-btn" onclick="jump('home-wrapper')"></div>
+    <div class="navigation-btns" onclick="jump('pros-wrapper')"></div>
+    <div class="navigation-btns" onclick="jump('pro-list-3')"></div>
+    <div class="navigation-btns" onclick="jump('feedback-wrapper')"></div>
+</div>
+<div id="home-wrapper">
+    <div id="info-wrapper">
+        <div id="title">Торговля цифровыми активами под вашим контролем</div>
+        <div id="sub-title">Доходность. Доступность. Безопасность</div>
+        <a href="../files/kristo.apk"  download="" class="download-button-light"> Скачать </a>
+        <div class="button-subtitle">Версия: 0.0.3</div>
+    </div>
+    <img id="mockup" src='../images/mockup-main-page-with-logo-edited.png' alt="">
+</div>
+<div id="pros-wrapper">
+    <div class="pro">
+        <div class="pro-image"><img src="../images/pro-1.png" alt=""></div>
+        <div class="pro-text">
+            <div class="pro-title" id="pro-1-title">
+                Безопасность
+            </div>
+            <div class="pro-subtitle" id="pro-1-subtitle">
+                Система шифрования Kristo обеспечивает вас полноценным контролем над вашими цифровыми активами. Получить доступ к активам на кошельке может исключительно обладатель пароля от приложения.
+            </div>
+        </div>
+    </div>
+    <ul class="pro-list">
+        <li>Криптографическая ассоциация кошелька с конкретным устройством пользователя</li>
+        <li>Возможность создания бумажного криптокошелька</li>
+        <li>Многоступенчатая система шифрования</li>
+    </ul>
+    <div class="pro">
+        <div class="pro-text">
+            <div class="pro-title" id="pro-2-title">
+                Доступность
+            </div>
+            <div class="pro-subtitle" id="pro-2-subtitle">
+                Всего 1,5 минуты регистрации, и вы получите доступ к торговле всеми популярными криптовалютами на рынке. Покупайте криптовалюту за рубли и обменивайте цифровые активы одним кликом.
+            </div>
+        </div>
+        <div class="pro-image"><img src="../images/pro-2.png" alt=""></div>
+    </div>
+    <ul class="pro-list" style="float: right;">
+        <li>Покупка криптовалюты с банковских карт</li>
+        <li>Мгновенный доступ к ликвидности децентрализованных бирж</li>
+        <li>Интуитивно понятный интерфейс P2P-рынка</li>
+    </ul>
+    <div class="pro">
+        <div class="pro-image"><img src="../images/pro-3.png" alt=""></div>
+        <div class="pro-text">
+            <div class="pro-title" id="pro-3-title">
+                Доходность
+            </div>
+            <div class="pro-subtitle" id="pro-3-subtitle">
+                Оптимизационные алгоритмы Kristo обеспечивают максимально выгодный рыночный курс. Зарабатывайте больше с Kristo.
+            </div>
+        </div>
+    </div>
+    <ul class="pro-list" id="pro-list-3">
+        <li>Низкие комиссии</li>
+        <li>Алгоритмы маршрутизации среди децентрализованных бирж</li>
+        <li>Выгодные программы лояльности</li>
+    </ul>
+    <div id="download-wrapper">
+        <img id="decoration-1" src="../images/decoration-1.png" alt="">
+        <img id="decoration-2" src="../images/decoration-2.png" alt="">
+        <div id="download-title">
+            Актуальная версия приложения
+        </div>
+        <a href="../files/kristo.apk"  download="" class="download-button-dark"> Скачать </a>
+        <div class="button-subtitle">Версия: 0.0.3</div>
+    </div>
+</div>
+<div id="feedback-wrapper">
+    <div id="feedback-title">Свяжитесь с нами</div>
+    <div id="feedback-subtitle">Вы можете заполнить форму ниже или написать нам в социальных сетях:</div>
+    <div id="social-networks">
+        <a href="#"><img class="social-networks-item" src="../images/telegram_icon.png" alt=""></a>
+    </div>
+    <div id="feedback-form">
+        <input id="name-input" class="input" type="text" placeholder="Имя">
+        <input id="email-input" class="input" type="text" placeholder="Эл. почта">
+        <textarea id="message-input" class="input" placeholder="Введите сообщение здесь..."></textarea>
+        <div class="button" id="send-btn">Отправить</div>
+    </div>
+</div>
+<div id="copyright">© 2021 by Kristo Team</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../scripts/dotNavigation.js"></script>
