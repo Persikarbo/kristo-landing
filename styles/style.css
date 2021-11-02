@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
-#header-buttons a:hover {
+.buttons div:hover, .buttons a:hover {
     color: #3B516E;
     transition: color 0.5s;
 }
